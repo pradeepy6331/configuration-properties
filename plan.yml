@@ -1,13 +1,14 @@
-server:
-  port: 9090
- 
 spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/ashokitschool/configuration_properties
-          clone-on-start: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: root
+    url: 'jdbc:mysql://localhost:3306/jrtp25  '
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: 'update  '
+    show-sql: true
+
           
           
    
